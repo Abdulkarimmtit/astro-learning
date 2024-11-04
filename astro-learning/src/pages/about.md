@@ -1,3 +1,7 @@
+---
+layout: ../layouts/default.astro
+---
+
 # About sndwch
 
 The history of sndwch is the history of all of us, really. Who among us hasn't set
