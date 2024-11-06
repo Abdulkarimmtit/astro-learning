@@ -1,6 +1,6 @@
 import { computed, map } from 'nanostores';
 
-export const cart = map<Record<number, CartStore | undefined>>({});
+export const cart = map<Record<number, CartItem | undefined>>({});
 
 export function addItemToCart(item: ShopItem) {
 	const cartItem = cart.get()[item.id];

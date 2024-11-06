@@ -16,7 +16,7 @@ if (!result.ok) {
 	console.error(result);
 }
 
-const shopItems: ShopItem[] = await result.json();
+const shopItems : ShopItem[] = await result.json();
 
 interface Props {
 	count?: number;
@@ -35,7 +35,7 @@ const { count = Infinity, addToCart = true } = Astro.props;
 					<h2>{item.title}</h2>
 					<p>{item.description}</p>
 					<p class="price">{formatCurrency(item.price)}</p>
-					{addToCart ? <AddToCart item={item} client:only="react" /> : null}
+					<AddToCart item={item} client:only="react"/>
 				</div>
 			);
 		})
